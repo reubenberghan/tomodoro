@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/App Default 1`] = `
+<header>
+  <h1
+    className="heading"
+  >
+    Hello 
+    world
+    .
+  </h1>
+</header>
+`;
+
+exports[`Storyshots Components/Heading Default 1`] = `
+<h1
+  className="heading"
+>
+  Hello 
+  world
+  .
+</h1>
+`;
+
+exports[`Storyshots Components/Heading With Name 1`] = `
+<h1
+  className="heading"
+>
+  Hello 
+  Bob
+  .
+</h1>
+`;

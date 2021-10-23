@@ -1,7 +1,12 @@
 {
   "name": "tomodoro",
   "version": "0.1.0",
+  "description": "A pomodoro app.",
   "private": true,
+  "author": {
+    "name": "Reuben Berghan",
+    "email": "reuben.berghan@gmail.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -16,17 +21,32 @@
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/addon-storyshots": "^6.3.12",
+    "@storybook/node-logger": "^6.3.12",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.12",
+    "@storybook/testing-react": "^0.0.22",
+    "eslint-plugin-sort-destructure-keys": "^1.3.5",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "^2.4.1",
+    "react-test-renderer": "^17.0.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-storybook": "build-storybook -s public",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006 -s public",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "type-check": "tsc --noEmit"
   },
   "browserslist": {
     "production": [
@@ -39,5 +59,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reubenberghan/tomodoro"
+  },
+  "bugs": {
+    "url": "https://github.com/reubenberghan/tomodoro/issues"
+  },
+  "resolutions": {
+    "babel-loader": "8.1.0"
   }
 }

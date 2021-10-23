@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["sort-destructure-keys", "sort-imports-es6-autofix"],
+  "rules": {
+    "sort-destructure-keys/sort-destructure-keys": "warn",
+    "sort-imports-es6-autofix/sort-imports-es6": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ]
+}
